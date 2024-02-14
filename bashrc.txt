@@ -1,0 +1,58 @@
+[[ $- == *i* ]] && source "$HOME/.local/share/blesh/ble.sh" --attach=none
+# .bashrc
+
+# User specific aliases and functions
+
+
+export LANG='en_US.UTF-8'	
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+alias tree='env LANG=C tree'
+alias grep='grep --color=auto -i'
+alias df='df -hT'
+alias pps='ps -ef | head -1 ; ps -ef | grep $1'
+alias c='clear'
+
+
+alias c='clear'
+alias h='history'
+alias t='/usr/kerberos/bin/telnet 172.16.9.252'
+alias d='cd /test && rm -rf /test/*'
+
+alias grep='/bin/grep -i --color=auto'
+alias ls='ls -h -F --color=tty'
+#alias cat='/bin/cat -n'
+alias df='/bin/df -h -T'
+alias tree='tree -C -A -F'
+alias tree='env LANG=C tree'
+
+alias pps='/bin/ps -ef | head -1 ; ps -ef | grep $1'
+alias lsf='/bin/ls -al | grep ^-'
+alias lsd='/bin/ls -al | grep ^d'
+alias ddf='/bin/df -h -F ext3 ; echo ; /bin/df -i'
+
+alias icfonfig='ifconfig'
+alias clar='clear'
+
+
+alias vi='/usr/bin/vim'
+alias df='df -h -T'
+alias chrome='/usr/bin/google-chrome --no-sandbox'
+
+alias ttt='chmod 700 /root/bin/*.sh'
+alias RS='rsync -avz --delete -e ssh'
+alias LS='rsync -a --delete'
+
+alias fwcmd='firewall-cmd --permanent'
+alias fwreload='firewall-cmd --reload'
+alias fwlist='firewall-cmd --list-all'
+
+
+
